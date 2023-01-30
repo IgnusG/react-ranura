@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "arcanis.vscode-zipfs",
+        "prisma.prisma",
+        "editorconfig.editorconfig"
+    ]
+}

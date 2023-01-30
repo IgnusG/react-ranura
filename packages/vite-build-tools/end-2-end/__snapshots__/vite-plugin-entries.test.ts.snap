@@ -1,0 +1,105 @@
+// Vitest Snapshot v1
+
+exports[`vite-plugin-entries > correctly creates the output build files for a es/cjs mixed configuration 1`] = `
+"const greeting = \\"Hello World!\\";
+export {
+  greeting
+};
+"
+`;
+
+exports[`vite-plugin-entries > correctly creates the output build files for a es/cjs mixed configuration 2`] = `
+"\\"use strict\\";
+Object.defineProperty(exports, Symbol.toStringTag, { value: \\"Module\\" });
+const greeting = \\"Hello World!\\";
+exports.greeting = greeting;
+"
+`;
+
+exports[`vite-plugin-entries > correctly creates the output build files for a es/cjs mixed configuration for multiple entries 1`] = `
+"const greeting = \\"Hello World!\\";
+export {
+  greeting
+};
+"
+`;
+
+exports[`vite-plugin-entries > correctly creates the output build files for a es/cjs mixed configuration for multiple entries 2`] = `
+"const otherGreeting = \\"Hello everyone!\\";
+export {
+  otherGreeting
+};
+"
+`;
+
+exports[`vite-plugin-entries > correctly creates the output build files for a es/cjs mixed configuration for multiple entries 3`] = `
+"\\"use strict\\";
+Object.defineProperty(exports, Symbol.toStringTag, { value: \\"Module\\" });
+const greeting = \\"Hello World!\\";
+exports.greeting = greeting;
+"
+`;
+
+exports[`vite-plugin-entries > correctly creates the output build files for a es/cjs mixed configuration for multiple entries 4`] = `
+"\\"use strict\\";
+Object.defineProperty(exports, Symbol.toStringTag, { value: \\"Module\\" });
+const otherGreeting = \\"Hello everyone!\\";
+exports.otherGreeting = otherGreeting;
+"
+`;
+
+exports[`vite-plugin-entries > correctly creates the output build files for a simple es configuration 1`] = `
+"const greeting = \\"Hello World!\\";
+export {
+  greeting
+};
+"
+`;
+
+exports[`vite-plugin-entries > supports modifying output and exports paths 1`] = `
+"const greeting = \\"Hello World!\\";
+export {
+  greeting
+};
+"
+`;
+
+exports[`vite-plugin-entries > supports modifying output and exports paths 2`] = `
+"\\"use strict\\";
+Object.defineProperty(exports, Symbol.toStringTag, { value: \\"Module\\" });
+const greeting = \\"Hello World!\\";
+exports.greeting = greeting;
+"
+`;
+
+exports[`vite-plugin-entries > supports nesting folders outputting the same filename 1`] = `
+"const greeting = \\"Hello World!\\";
+export {
+  greeting
+};
+"
+`;
+
+exports[`vite-plugin-entries > supports nesting folders outputting the same filename 2`] = `
+"const greeting = \\"Nested Hello World!\\";
+export {
+  greeting
+};
+"
+`;
+
+exports[`vite-plugin-entries > supports nesting folders outputting the same filename 3`] = `
+"\\"use strict\\";
+Object.defineProperty(exports, Symbol.toStringTag, { value: \\"Module\\" });
+const greeting = \\"Hello World!\\";
+exports.greeting = greeting;
+"
+`;
+
+exports[`vite-plugin-entries > supports nesting folders outputting the same filename 4`] = `
+"\\"use strict\\";
+Object.defineProperty(exports, Symbol.toStringTag, { value: \\"Module\\" });
+const greeting = \\"Nested Hello World!\\";
+exports.greeting = greeting;
+"
+`;

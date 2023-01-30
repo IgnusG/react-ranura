@@ -1,0 +1,3 @@
+// Vitest Snapshot v1
+
+exports[`vite-plugin-entries > correctly creates the output build files for a simple es configuration 1`] = `"export * from \\"../index.js\\""`;

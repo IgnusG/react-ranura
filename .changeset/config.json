@@ -1,0 +1,6 @@
+{
+    "baseBranch": "main",
+    "ignore": [],
+    "commit": ["./commit.cjs", {}],
+    "changelog": ["@changesets/changelog-github", { "repo": "IgnusG/build-tools" }]
+}

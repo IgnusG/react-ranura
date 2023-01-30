@@ -1,0 +1,48 @@
+name: GitHub CD
+on:
+  workflow_call:
+concurrency: deployments-${{ github.ref }}
+jobs:
+  release-npm:
+    name: Release npm
+    runs-on: ubuntu-latest
+    outputs:
+      published: ${{ steps.changesets.outputs.published == 'true' }}
+      packages: ${{ steps.package-matrix.outputs.packages }}
+    environment:
+      name: npm
+    strategy:
+      matrix:
+        node-version: [19.1.0]
+    steps:
+      - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # ratchet:actions/checkout@v3
+      - uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # ratchet:actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: yarn install
+      - uses: changesets/action@5f3b898718761af42fe162af3258e4145d07be24 # ratchet:changesets/action@v1
+        id: changesets
+        with:
+          publish: yarn change:publish
+          version: node -e 'console.log("RunningVersionCommandNotAllowed");process.exit(1)' # There is no versioning available during deployment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - run: echo 'packages={"include":${{ steps.changesets.outputs.publishedPackages }}}' >> $GITHUB_OUTPUT
+        id: package-matrix
+  deployment-status-npm:
+    name: Update Deployment Statuses
+    runs-on: ubuntu-latest
+    needs: [release-npm]
+    if: needs.release-npm.outputs.published == 'true'
+    strategy:
+      matrix: ${{ fromJSON(needs.release-npm.outputs.packages) }}
+    steps:
+      - uses: chrnorm/deployment-action@21e908ae0ea3c446d94b0c4000eb933126d3b6a3 # ratchet:chrnorm/deployment-action@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          environment: ${{ matrix.name }}
+          environment-url: "https://www.npmjs.com/package/${{ matrix.name }}/v/${{ matrix.version }}"
+          payload: ${{ toJSON(matrix) }}
+          initial-status: success
+          production-environment: true
