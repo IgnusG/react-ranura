@@ -1073,7 +1073,7 @@ __metadata:
     lint-staged: "npm:13.1.0"
     prettier: "npm:2.8.3"
     ts-node: "npm:10.9.1"
-    turbo: "npm:1.6.3"
+    turbo: "npm:1.8.1"
     typescript: "npm:4.9.4"
     zx: "npm:7.1.1"
   dependenciesMeta:
@@ -5423,58 +5423,58 @@ __metadata:
   languageName: node
   linkType: hard
 
-"turbo-darwin-64@npm:1.6.3":
-  version: 1.6.3
-  resolution: "turbo-darwin-64@npm:1.6.3"
+"turbo-darwin-64@npm:1.8.1":
+  version: 1.8.1
+  resolution: "turbo-darwin-64@npm:1.8.1"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-darwin-arm64@npm:1.6.3":
-  version: 1.6.3
-  resolution: "turbo-darwin-arm64@npm:1.6.3"
+"turbo-darwin-arm64@npm:1.8.1":
+  version: 1.8.1
+  resolution: "turbo-darwin-arm64@npm:1.8.1"
   conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-linux-64@npm:1.6.3":
-  version: 1.6.3
-  resolution: "turbo-linux-64@npm:1.6.3"
+"turbo-linux-64@npm:1.8.1":
+  version: 1.8.1
+  resolution: "turbo-linux-64@npm:1.8.1"
   conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-linux-arm64@npm:1.6.3":
-  version: 1.6.3
-  resolution: "turbo-linux-arm64@npm:1.6.3"
+"turbo-linux-arm64@npm:1.8.1":
+  version: 1.8.1
+  resolution: "turbo-linux-arm64@npm:1.8.1"
   conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo-windows-64@npm:1.6.3":
-  version: 1.6.3
-  resolution: "turbo-windows-64@npm:1.6.3"
+"turbo-windows-64@npm:1.8.1":
+  version: 1.8.1
+  resolution: "turbo-windows-64@npm:1.8.1"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
-"turbo-windows-arm64@npm:1.6.3":
-  version: 1.6.3
-  resolution: "turbo-windows-arm64@npm:1.6.3"
+"turbo-windows-arm64@npm:1.8.1":
+  version: 1.8.1
+  resolution: "turbo-windows-arm64@npm:1.8.1"
   conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
-"turbo@npm:1.6.3":
-  version: 1.6.3
-  resolution: "turbo@npm:1.6.3"
+"turbo@npm:1.8.1":
+  version: 1.8.1
+  resolution: "turbo@npm:1.8.1"
   dependencies:
-    turbo-darwin-64: "npm:1.6.3"
-    turbo-darwin-arm64: "npm:1.6.3"
-    turbo-linux-64: "npm:1.6.3"
-    turbo-linux-arm64: "npm:1.6.3"
-    turbo-windows-64: "npm:1.6.3"
-    turbo-windows-arm64: "npm:1.6.3"
+    turbo-darwin-64: "npm:1.8.1"
+    turbo-darwin-arm64: "npm:1.8.1"
+    turbo-linux-64: "npm:1.8.1"
+    turbo-linux-arm64: "npm:1.8.1"
+    turbo-windows-64: "npm:1.8.1"
+    turbo-windows-arm64: "npm:1.8.1"
   dependenciesMeta:
     turbo-darwin-64:
       optional: true
@@ -5490,7 +5490,7 @@ __metadata:
       optional: true
   bin:
     turbo: bin/turbo
-  checksum: 3e95f6714733d702fbe07497d64916d2eef7b736e52c716fe513e9b9ecc223445b102c07a0ea1296c5ed1db8f7725364a488b221242a946d1759d54ef52d08fe
+  checksum: 36c87fe1a69d826aa74918c080fd0156d03795c74234f612dc5e35a1f12ef77429f65001f87547341fb827ded3027c91e837f7144a8395f8d91354134e2f4e65
   languageName: node
   linkType: hard
 
