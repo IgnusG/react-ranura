@@ -29,7 +29,7 @@
         "@typescript-eslint/eslint-plugin": "5.49.0",
         "@typescript-eslint/parser": "5.48.2",
         "@yarnpkg/pnpify": "4.0.0-rc.37",
-        "eslint": "8.27.0",
+        "eslint": "8.36.0",
         "eslint-config-prettier": "8.6.0",
         "eslint-plugin-simple-import-sort": "10.0.0",
         "eslint-plugin-unused-imports": "2.0.0",
