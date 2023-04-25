@@ -4092,7 +4092,7 @@ const RAW_RUNTIME_STATE =
           ["object-inspect", "npm:1.12.2"],\
           ["pidtree", "npm:0.6.0"],\
           ["string-argv", "npm:0.3.1"],\
-          ["yaml", "npm:2.2.1"]\
+          ["yaml", "npm:2.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6896,17 +6896,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["yaml", [\
-      ["npm:2.1.3", {\
-        "packageLocation": "./.yarn/cache/yaml-npm-2.1.3-654a90032d-2747f51351.zip/node_modules/yaml/",\
+      ["npm:2.2.2", {\
+        "packageLocation": "./.yarn/cache/yaml-npm-2.2.2-6e3cddb343-afa383e3cb.zip/node_modules/yaml/",\
         "packageDependencies": [\
-          ["yaml", "npm:2.1.3"]\
-        ],\
-        "linkType": "HARD"\
-      }],\
-      ["npm:2.2.1", {\
-        "packageLocation": "./.yarn/cache/yaml-npm-2.2.1-b7f7f5e84d-6a9e540d14.zip/node_modules/yaml/",\
-        "packageDependencies": [\
-          ["yaml", "npm:2.2.1"]\
+          ["yaml", "npm:2.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -7005,7 +6998,7 @@ const RAW_RUNTIME_STATE =
           ["node-fetch", "npm:3.2.10"],\
           ["ps-tree", "npm:1.2.0"],\
           ["which", "npm:2.0.2"],\
-          ["yaml", "npm:2.1.3"]\
+          ["yaml", "npm:2.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
